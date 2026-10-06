@@ -1,0 +1,44 @@
+<% layout('/layouts/boilerplate.ejs') %>
+
+<section class="listing-form-page">
+    <header class="form-page-header">
+        <p class="form-eyebrow">Share your space</p>
+        <h1>Create a new listing</h1>
+        <p>Add the details below to introduce your place to travelers.</p>
+    </header>
+
+    <form class="listing-form" method="POST" action="/listings/add_new">
+        <div class="form-field">
+            <label for="title">Listing title</label>
+            <input class="form-control" type="text" id="title" name="title" required placeholder="e.g. Cozy cabin by the lake">
+        </div>
+
+        <div class="form-field">
+            <label for="description">Description</label>
+            <textarea class="form-control" id="description" name="description" rows="5" required placeholder="What makes your place special?"></textarea>
+        </div>
+
+        <div class="form-field">
+            <label for="image">Image URL <span>(optional)</span></label>
+            <input class="form-control" type="url" id="image" name="image" placeholder="https://example.com/photo.jpg">
+        </div>
+
+        <div class="form-field">
+            <label for="price">Price per night (₹)</label>
+            <input class="form-control" type="number" id="price" name="price" min="0" required placeholder="e.g. 5000">
+        </div>
+
+        <div class="form-row">
+            <div class="form-field">
+                <label for="location">Location</label>
+                <input class="form-control" type="text" id="location" name="location" required placeholder="City or area">
+            </div>
+            <div class="form-field">
+                <label for="country">Country</label>
+                <input class="form-control" type="text" id="country" name="country" required placeholder="Country">
+            </div>
+        </div>
+
+        <button class="primary-action" type="submit">Create listing</button>
+    </form>
+</section>

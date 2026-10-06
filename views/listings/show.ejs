@@ -1,0 +1,22 @@
+<% layout('/layouts/boilerplate.ejs') %>
+
+<section class="listing-detail-page">
+    <a class="back-link" href="/listings">&larr; Back to all listings</a>
+
+    <article class="listing-detail-card">
+        <img class="detail-image" src="<%= Listing.image %>" alt="<%= Listing.title %>">
+        <div class="detail-content">
+            <p class="form-eyebrow"><%= Listing.location %>, <%= Listing.country %></p>
+            <h1><%= Listing.title %></h1>
+            <p class="detail-description"><%= Listing.description %></p>
+            <p class="detail-price"><strong>₹<%= Listing.price.toLocaleString('en-IN') %></strong> <span>per night</span></p>
+
+            <div class="detail-actions">
+                <a class="primary-action detail-edit-action" href="/listings/<%= Listing._id %>/edit">Edit listing</a>
+                <form method="POST" action="/listings/<%= Listing._id %>/delete?_method=DELETE">
+                    <button class="danger-action" type="submit">Delete listing</button>
+                </form>
+            </div>
+        </div>
+    </article>
+</section>

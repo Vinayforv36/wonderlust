@@ -1,0 +1,380 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+  
+}
+.container {
+  flex: 1;
+}
+
+.navbar {
+  height: 5rem;
+  background-color: #fff;
+}
+
+.navbar-brand i {
+  font-size: 2rem;
+  color: #fe424d;
+  background-color: white;
+}
+
+.nav-link {
+  color: #222222 !important;
+}
+
+.site-footer {
+  background-color: #f5f5f5;
+  border-top: 1px solid #e5e5e5;
+  padding: 1.25rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.f-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
+  color: #222222;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.2rem;
+}
+
+.social-links i {
+  color: #222222;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.social-links i:hover {
+  color: #fe424d;
+  transform: translateY(-2px);
+}
+
+.f-info-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.f-info-link {
+  color: #222222;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.f-info-link:hover {
+  color: #fe424d;
+  text-decoration: underline;
+}
+
+.listing-page {
+  padding: 2rem 0 3rem;
+}
+
+.page-header {
+  margin-bottom: 1.5rem;
+}
+
+.page-header h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222222;
+  margin: 0;
+}
+
+.listing-grid {
+  margin-top: 1rem;
+}
+
+.listing-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.listing-card {
+  border-radius: 1.35rem;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.08);
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.listing-link:hover .listing-card {
+  box-shadow: 0 18px 35px rgba(15, 23, 42, 0.14);
+}
+
+.image-wrap {
+  position: relative;
+}
+
+.card-img-top {
+  height: 20rem;
+  width: 100% !important;
+  object-fit: cover !important;
+  display: block;
+  border-radius: 1.35rem 1.35rem 0 0 !important;
+}
+
+.card-body {
+  padding: 1rem 1rem 1.1rem !important;
+  background: linear-gradient(180deg, #ffffff 0%, #fafafa 100%);
+}
+
+.card-topline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.35rem;
+}
+
+.listing-title {
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: #222222;
+}
+
+.listing-price {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fe424d;
+}
+
+.card-location {
+  margin: 0;
+  color: #666;
+  font-size: 0.92rem;
+}
+
+.listing-form-page,
+.listing-detail-page {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 2.5rem 0 4rem;
+}
+
+.form-page-header {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.form-eyebrow {
+  margin: 0 0 0.45rem;
+  color: #fe424d;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.form-page-header h1,
+.detail-content h1 {
+  margin: 0;
+  color: #222;
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  font-weight: 750;
+}
+
+.form-page-header > p:last-child {
+  margin: 0.6rem 0 0;
+  color: #6b7280;
+}
+
+.listing-form {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: clamp(1.25rem, 4vw, 2rem);
+  border: 1px solid #eceef2;
+  border-radius: 1.25rem;
+  background: #fff;
+  box-shadow: 0 14px 40px rgba(15, 23, 42, 0.08);
+}
+
+.form-field {
+  min-width: 0;
+  margin-bottom: 1.2rem;
+}
+
+.form-field label {
+  display: block;
+  margin-bottom: 0.45rem;
+  color: #30343b;
+  font-size: 0.92rem;
+  font-weight: 650;
+}
+
+.form-field label span {
+  color: #858b96;
+  font-size: 0.82rem;
+  font-weight: 400;
+}
+
+.form-field .form-control {
+  min-height: 2.9rem;
+  border-color: #dfe3e8;
+  border-radius: 0.7rem;
+  padding: 0.7rem 0.85rem;
+}
+
+.form-field textarea.form-control {
+  min-height: 8rem;
+  resize: vertical;
+}
+
+.form-field .form-control:focus {
+  border-color: #fe424d;
+  box-shadow: 0 0 0 0.2rem rgba(254, 66, 77, 0.14);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.primary-action,
+.danger-action {
+  display: inline-flex;
+  min-height: 2.9rem;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 0.7rem;
+  padding: 0.7rem 1.2rem;
+  font: inherit;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.primary-action {
+  background: #fe424d;
+  color: #fff;
+}
+
+.primary-action:hover {
+  background: #e93440;
+  color: #fff;
+  box-shadow: 0 6px 16px rgba(254, 66, 77, 0.22);
+}
+
+.listing-form > .primary-action {
+  width: 100%;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: #555d68;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  color: #fe424d;
+}
+
+.listing-detail-card {
+  overflow: hidden;
+  border: 1px solid #eceef2;
+  border-radius: 1.35rem;
+  background: #fff;
+  box-shadow: 0 14px 40px rgba(15, 23, 42, 0.09);
+}
+
+.detail-image {
+  display: block;
+  width: 100%;
+  max-height: 28rem;
+  object-fit: cover;
+}
+
+.detail-content {
+  padding: clamp(1.25rem, 4vw, 2.25rem);
+}
+
+.detail-content h1 {
+  margin-bottom: 1rem;
+}
+
+.detail-description {
+  color: #59616d;
+  line-height: 1.75;
+  white-space: pre-line;
+}
+
+.detail-price {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  margin: 1.25rem 0 0;
+  color: #222;
+}
+
+.detail-price strong {
+  font-size: 1.4rem;
+}
+
+.detail-price span {
+  color: #737b86;
+}
+
+.detail-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.danger-action {
+  background: #fff;
+  border: 1px solid #e0a0a4;
+  color: #c62833;
+}
+
+.danger-action:hover {
+  background: #fff1f2;
+  border-color: #c62833;
+}
+
+@media (max-width: 576px) {
+  .page-header h3 {
+    font-size: 1.6rem;
+  }
+
+  .card-img-top {
+    height: 17rem;
+  }
+
+  .listing-form-page,
+  .listing-detail-page {
+    padding-top: 1.5rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .detail-image {
+    height: 17rem;
+  }
+}
